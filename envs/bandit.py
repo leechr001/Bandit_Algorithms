@@ -8,9 +8,6 @@ class Bandit:
         self.n_arms = len(means)
         self.optimal_mean = max(means)
 
-        if max(means) > 1 or min(means) < 0:
-            raise ValueError("Mean is not in [0,1]")
-
     def k(self):
         return self.n_arms
     
