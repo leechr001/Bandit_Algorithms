@@ -10,7 +10,7 @@ from gym import Env, spaces
 from io import StringIO
 import sys
 
-class BernoulliBanditEnv(Env):
+class BernoulliBanditGym(Env):
 
     metadata = {'render.modes': ['human', 'ansi']}
 
@@ -101,6 +101,3 @@ class BernoulliBanditEnv(Env):
         outfile.write('\n')
 
         return outfile
-
-
-    
